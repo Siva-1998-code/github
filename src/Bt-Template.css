@@ -1,0 +1,35 @@
+*{
+    margin: 5px auto ;
+  }
+  
+  .height{
+      height: 500px;
+      width: auto;
+      padding: 200px 0;
+  }
+  
+  .bg{
+    background-image:url(https://img.freepik.com/free-photo/healthcare-accessories-with-modern-devices-green-background_23-2148213959.jpg?t=st=1679416251~exp=1679416851~hmac=120ea87a1a91a10cd06c61ac6b50c89c5345eeace73a3b277412b6b53bcb8040);
+    background-size: cover;
+  }
+  
+  .bg h1{
+    text-shadow: 1px 1px 5px white;
+  }
+  
+  .img{
+    height: 100px;
+    width: 100px;
+  }
+  
+  .head{
+    font-size: x-large;
+    font-weight: 700;
+    background-color: transparent;
+    color: rgb(6, 204, 128);
+  }
+  
+  .text{
+    font-size: larger;
+    text-align: justify;
+  }

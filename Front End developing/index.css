@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.main{
+    height:100vh;
+    display: flex;
+}
+
+.header{
+    background-color: aqua;
+    flex-direction: row;
+    height:80px;
+}
+
+.navbar{
+    background-color: aquamarine;
+    height:50px;
+    display: flex;
+    justify-content:center;
+}
+
+.center{
+    display: flex;
+    height: 530px;
+}
+
+.menu{
+    background-color: rgb(9, 130, 250);
+    flex:15;
+}
+
+.even h3{
+    display: flex;
+    justify-content:center;
+}
+
+.contant{
+    background-color: rgb(77, 97, 117);
+    flex:70;
+}
+
+.advertisement{
+    background-color: rgb(9, 130, 250);
+    flex:15;
+}
+
+.footer{
+    background-color: aqua;
+    flex-direction: row;
+    height:50px;
+}
+

@@ -1,0 +1,61 @@
+h6 {
+    font-size: 45%;
+ }
+
+ p {
+    font-size: smaller;
+ }
+
+ .class {
+    color: rgb(0, 195, 255);
+ }
+
+ .right {
+    float: right;
+    padding: 0px;
+ }
+
+ h3 {
+    margin: 0;
+    margin-left: 0px;
+ }
+
+ #headline{
+    display: flex;
+
+ }
+ #id{
+    float: right;
+ }
+ .class{
+    float: left;
+ }
+ .h2{
+    margin: 3px;
+    padding:none;
+ } 
+ .table {
+    border: 3px solid rgb(0, 204, 255);
+    width:100%;
+ } 
+ #id{
+   color: white;
+   border-color: blue;
+   background-color: blue;
+   margin-top: 6px;
+ }
+ #id1{
+    color: white;
+    border-color: greenyellow;
+    background-color: greenyellow;
+    margin: top 3px;
+ }
+ #id2{
+    color:white;
+    border-color:red;
+    background-color:red;
+    margin-top: 3px;
+ } 
+ .p{
+    background-image: url('workplace.jpg');
+ }

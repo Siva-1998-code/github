@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding: 0;
+    background-color:rgb(255, 191, 72);
+
+}
+
+.head{
+    padding:20px 0;
+    height:100vh;
+    width:100%;
+}
+
+.head h2 p{
+    padding:10px;
+    font-weight: bolder;
+}
+
+#race{
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    font-weight:bolder;
+    font-size: larger;
+    text-shadow:5px 5px 10px solid white;
+    
+}
+.head ul{
+    padding: 10px 0;
+}
+
+.head ul li {
+    display: flex;
+    float: right;
+    display:block;
+    margin-right:20PX;
+}
+
+.head a{
+    text-decoration: none;
+    color:black;
+    font-weight: 600;
+}
+
+.head a:hover{
+    transform:skewX(30px);
+    border-radius:2px;
+    border-bottom: 5px solid rgb(255, 255, 255);
+}
+
+.image img{
+    height: 180px;
+    display: block;
+    margin-left:30px;
+    position: relative;
+    top: 0;
+    transition: 0.5s;
+}
+
+.image img:hover{
+    transform: translateX(30px);
+    transition: 0.2s;
+}
+
+.contant{
+    text-align: center;
+    display: block;
+    font-family:Verdana, Geneva, Tahoma;
+}
+
+.contant h2{
+    margin-top:50px;
+}
+
+.contant p{
+    text-align:left;
+}
+
+.contant h2,h3 ,p{
+    margin-top: 30px;
+    font-weight:600;
+}
+.big-image img{
+    position: relative ;
+    float: right;
+    margin-right:100px;
+}
+
+
+@media screen and (max-width:768px) {
+    .big-image img{
+        position: relative ;
+        float: left;
+        display: none;
+    }
+    .image img:hover{
+        transform: translateX(40px);
+        transition: 0.5s;
+    }
+}

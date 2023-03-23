@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bike-validation.css">
+</head>
+<body>
+    <section class="container ">
+            <h2>Zeus Cutom</h2>
+            <div class="navbar">
+                <ul>
+                    <li><a href="/Front End developing/Zeus-Custom/bike-about.html">About Us</a></li>
+                    <li><a href="">Gallery</a></li>
+                    <li><a href="/Front End developing/Zeus-Custom/bike-shop.html">Home</a></li>
+                    <br>
+                </ul>
+               </div>
+            <h3>CONTACT :-</h3>
+        <form action="" id="form">
+            <div id="name width">
+                <label for="">USER NAME :</label>
+                <input type="text" id="name" placeholder="Enter Your User Name" autocomplete="off" >
+                <p id="alert1" style="color:red;"></p>
+            </div>
+            <div id="number ">
+                <label for="">MOBILE NUMBER :</label>
+                <input type="text" id="numb" placeholder="Enter Your mobile number" minlength="10" maxlength="10" autocomplete="off" > 
+                <p id="alert2" style="color:red;"></p>
+            </div>
+            <div id="mail">
+                <label for="name">G MAIL :</label>
+                <input type="email" name="mail" id="mail-id" placeholder="Enter your mail id" autocomplete="off" >
+                <p id="alert3" style="color:red;"></p>
+            </div>
+            <div class="text">
+                <textarea name="description" id="textarea cols= "80" rows="21" placeholder="description" >description</textarea>
+            </div>
+            <div id="rigister">
+                <button type="submit" onclick="validate()">SUBMIT</button>
+            </div>
+        </form>
+    </section>
+    <script>
+         const form =document.getElementById("form");
+
+
+
+         form.addEventListener("submit",event=>{
+            event.preventDefault();
+         })
+
+         function validate(){
+
+            var name = document.getElementById("name").value;
+        let txtname = "please enter name";
+        let txt1 ="";
+        let err ="Please Enter Correct Input"
+        var numb = document.getElementById("numb").value;
+        let txtnumb = "pleasse enter number";
+        var mail = document.getElementById("mail-id").value;
+        let txtmail ="please Enter mail id";
+
+
+            if(name===""){
+                document.getElementById("alert1").innerHTML=txtname;
+                document.getElementById("name").style.border="3px solid red";
+            }
+            else if(name==(!/^[!a-zA-Z]+$/.test(name))){
+                document.getElementById("alert1").innerHTML=txtname;
+                document.getElementById("name").style.border="3px solid red";
+            }else{
+                document.getElementById("name").style.border="3px solid green";
+                document.getElementById("alert1").innerHTML=txt1;
+            }
+
+            if(numb==""){
+                document.getElementById("alert2").innerHTML = txtnumb;
+                document.getElementById("numb").style.border="3px solid red";
+            }
+
+            else if(numb==(!/^1|[1-9]\d*$/.test(numb))){
+                document.getElementById("alert2").innerHTML = txtnumb;
+                document.getElementById("numb").style.border="3px solid red";
+            }else{
+                document.getElementById("numb").style.border="3px solid green";
+                document.getElementById("alert2").innerHTML=txt1;
+            }
+
+            if(mail==""){
+                document.getElementById("alert3").innerHTML=txtmail;
+                document.getElementById("mail-id").style.border="3px solid red";
+            }
+
+            else if(mail==!/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(mail)){
+                document.getElementById("alert3").innerHTML=txtmail;
+                document.getElementById("mail-id").style.border="3px solid red";
+            }
+            else{
+                document.getElementById("mail-id").style.border="3px solid green";
+                document.getElementById("alert3").innerHTML=txt1;
+            }
+         }
+    </script>
+</body>
+</html>

@@ -1,0 +1,375 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+    will-change:contents
+    body{
+    width:100%; 
+    margin-left: 216px;
+    margin: 0;
+    padding: 0;
+    }
+  }
+
+.head{
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 20px;
+    font-size: xx-large;
+}
+.container{
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.dropdown{
+    display: flex;
+    justify-content:center;
+    list-style-type: none;
+    background-color: black;
+    
+}
+
+.dropdown a{
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1em;
+    color:white;
+}
+
+.about-dd{
+    list-style-type: none;
+    display: none;
+    position: fixed;
+    background-color: black;
+}
+
+.dropdown li:nth-child(1):hover .about-dd{
+    display: block;
+}
+
+.dropdown li:nth-child(2):hover .about-dd{
+    display: block;
+}
+
+.dropdown li:nth-child(3):hover .about-dd{
+    display: block;
+}
+
+.dropdown li:nth-child(4):hover .about-dd{
+    display: block;
+}
+
+.dropdown li:nth-child(6):hover .about-dd{
+    display: block;
+}
+
+.dropdown li:nth-child(7):hover .about-dd{
+    display: block;
+}
+
+.dropdown a:hover{
+    background-color: grey;
+    color: white;
+    padding: 10px 0;
+}
+
+.navbar a{
+    float:right;
+    text-decoration: none;
+    display: block;
+    color:rgb(0, 0, 0);
+    padding:14px 2%;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: rgb(241, 241, 241);
+    color: black;
+}
+
+#donate-fund{
+    background-color:rgb(28, 189, 22) ;
+    border-radius:5px;
+}
+
+.colunm{
+    float: left;
+    padding: 15px;
+    width: 33.33%;
+    height:100%;
+}
+
+.our-work img{
+    max-height:200px;
+    width: 1320px;
+    margin:5px 0;
+}
+.main{
+    display: flex;
+    flex-direction:row;
+    width:100%;
+}
+
+.left{
+    flex:15;
+}
+
+.contant{
+    flex:70;
+}
+
+.mission h2{
+     text-align: center;
+     font-weight: bolder;
+     color:rgb(13, 139, 9);
+     margin-bottom: 100px;
+     margin-top: 50px;
+
+}
+
+.india-is-world{
+    margin-bottom:30px;
+}
+
+.india-is-world img{
+    height:250px;
+    width:250px;
+    float: right;
+}
+
+.india-is-world h2{
+    margin-top:50px;
+    margin-bottom:50px;
+    text-align: center;
+    font-weight: bolder;
+    font-size:xx-large;
+    color:rgb(13, 139, 9);
+}
+
+.india-is-world p{
+    padding-bottom:20px;
+}
+
+#forest-restoration{
+    background: url(/pictures/anil-indigo-plant-indigofera-tinctoria-ACA3HW.jpg)no-repeat;
+    background-size: cover;
+    height: 300px;
+    width:450px;
+    float: left;
+    text-align: center;
+    font-weight: 900;
+    font-size: xx-large;
+    color:white;
+    text-shadow:5px 5px 5px black;
+    margin-top:50px;
+}
+
+#forest-restoration:hover{
+    color:rgb(255, 145, 0);
+    text-shadow: 2px 1px 2px black;
+}
+
+#forest-restoration button{
+    margin-top: 40px;
+    height: 40px;
+    width:110px;
+    border-color:rgb(28, 189, 22);
+    background-color:rgb(28, 189, 22);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right:10px;
+    
+}
+
+#forest-restoration button:hover{
+    background-color: white;
+    color: rgb(28, 189, 22);
+}
+
+
+#urban-greening{
+    background: url(/pictures/urban.jpg) no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    min-width:450px;
+    float: right;
+    text-align: center;
+    font-weight: 900;
+    font-size: xx-large;
+    color:white;
+    text-shadow:5px 5px 5px black;
+    margin-top:50px;
+}
+
+#urban-greening:hover{
+    color:rgb(255, 145, 0);
+    text-shadow: 2px 1px 2px black;
+}
+
+#urban-greening button{
+    margin-top: 40px;
+    height: 40px;
+    width:110px;
+    border-color:rgb(28, 189, 22);
+    background-color:rgb(28, 189, 22);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top:30px;
+}
+
+#urban-greening button:hover{
+    background-color: white;
+    color: rgb(28, 189, 22);
+}
+
+
+#food-greening{
+    background:url(/pictures/food.jpg) no-repeat;
+    background-size: cover;
+    height: 300px;
+    width:450px;
+    float: left;
+    margin-top:50px;
+    text-align: center;
+    font-weight: 900;
+    font-size: xx-large;
+    padding-top: 60px;
+    margin-bottom: 20px;
+    color:white;
+    text-shadow:5px 5px 5px black;
+}
+
+#food-greening:hover{
+    color:rgb(255, 145, 0);
+    text-shadow: 2px 1px 2px black;
+}
+
+
+#food-greening button{
+    margin-top: 40px;
+    height: 40px;
+    width:110px;
+    border-color:rgb(28, 189, 22);
+    background-color:rgb(28, 189, 22);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#food-greening button:hover{
+    background-color: white;
+    color: rgb(28, 189, 22);
+}
+
+
+#environmental-awarness{
+    background: url(/pictures/environmental.jpg)no-repeat;
+    background-size: cover;
+    height: 300px;
+    width:450px;
+    float: right;
+    margin-top:50px;
+    text-align: center;
+    font-weight: 900;
+    font-size: xx-large;
+    padding-top: 60px;
+    margin-bottom: 20px;
+    color:white;
+    text-shadow:5px 5px 5px black;
+}
+
+#environmental-awarness:hover{
+    color:rgb(255, 145, 0);
+    text-shadow: 2px 1px 2px black;
+}
+
+#environmental-awarness button:hover{
+    background-color: white;
+    color: rgb(28, 189, 22);
+}
+
+#environmental-awarness button{
+    margin-top: 40px;
+    height: 40px;
+    width:110px;
+    border-color:rgb(28, 189, 22);
+    background-color:rgb(28, 189, 22);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#forest-restoration button:hover{
+    background-color: white;
+    color: rgb(28, 189, 22);
+}
+
+.we-do-work h3,p{
+    justify-items: end;
+}
+
+.right{
+    flex:15;
+}
+
+.we-do-work img{
+    float: left;
+    margin-top: 20px;
+}
+
+.we-do-work h3{
+    margin-bottom: 25px;
+    color: rgb(28, 189, 22);
+    font-size:25px;
+}
+
+.we-do-work p{
+    margin-bottom: 10px;
+    font-size:17px;
+    font-weight: bold;
+}
+
+.we-do-work li{
+    margin-bottom: 2px;
+}
+
+.footer{
+    background-color: rgb(10, 20, 30);
+    padding: 20px;
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p{
+    color: white;
+    margin-bottom: 40px;
+}
+
+.footer-contact{
+    display: flex;
+    justify-content: space-between;
+    margin:20px 100px ;
+}
+
+.footer-contact h3{
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-contact a{
+    text-decoration: none;
+    color: grey;
+}
+#end{
+    margin-top: 10px;
+}

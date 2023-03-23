@@ -1,0 +1,618 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+section {
+    height: auto;
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    padding: 25px 86px;
+    position: sticky;
+    top: 0;
+    font-size: 30px;
+}
+
+.navbar div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    border-radius: 10px;
+}
+
+.menu {
+    float: right;
+}
+
+.bar-1:hover {
+    background-color: #ff4a6d;
+    color: #ff4a6d;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.page-1 {
+    background: url(/pictures/WhatsApp\ Image\ 2022-12-19\ at\ 1.57.54\ PM.jpeg) no-repeat;
+    background-size: 100% 100%;
+    height: 825px;
+    display: flex;
+}
+
+.contant-image {
+    max-height: 550px;
+    width: 350px;
+    display: flex;
+    flex: 1;
+    margin-left: 200px;
+    margin-top: 150px;
+}
+
+.contant-appliations {
+    flex: 1;
+    background-color: rgb(255, 255, 255);
+    max-height: 550px;
+    max-width: 540px;
+    margin-right: 200px;
+    margin-top: 150px;
+    padding-left: 50px;
+}
+
+.contant-appliations h2 {
+    font-size: 65px;
+    margin: 50px 0;
+    color: #ff4a6d;
+}
+
+.contant-appliations p {
+    font-size: medium;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.contant-appliations button {
+    background-color: rgb(0, 10, 153);
+    border: none;
+    color: white;
+    height: 60px;
+    width: 190px;
+    border-radius: 5px;
+}
+
+.contant-appliations button:hover {
+    background-color: #ff4a6d;
+}
+
+.page-2 {
+    background-color: rgb(255, 255, 255);
+    background-size: 100% 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+.who-we-are {
+    text-align: center;
+    border: 1px transparent;
+    width: 550px;
+    height: 400px;
+    margin: 150px auto;
+    color: rgb(0, 0, 0);
+}
+
+.who-we-are h2 {
+    border-bottom: 5px solid #ff4a6d;
+    margin: 30px 0;
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.who-we-are p {
+    font-size: x-large;
+    margin-bottom: 70px;
+    word-spacing: .1em;
+}
+
+#book-color {
+    border: 1px solid rgb(0, 10, 153);
+    padding: 19px 49px;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: #f3f3f3;
+    text-decoration: none;
+    margin-right: 25px;
+    color: black;
+}
+
+#book-color:hover {
+    background-color: rgb(0, 10, 153);
+    color: white;
+}
+
+#work-color {
+    border: none;
+    padding: 20px 50px;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: rgb(0, 10, 153);
+    text-decoration: none;
+    color: white;
+}
+
+#work-color:hover {
+    background-color: #ff4a6d;
+}
+
+.page-3 {
+    background-color: rgb(189, 189, 189);
+    background-size: 100% 100%;
+    height: 900px;
+}
+
+.page-3-center {
+    position: relative;
+    margin: 150px auto;
+}
+
+.oval {
+    margin-top: 750px;
+    margin-left: 400px;
+    border-radius: 100% 100% 100% 100%;
+    height: 350px;
+    width: 350px;
+    background-color: #ff4a6d;
+    position: relative;
+}
+
+.image1 img {
+    margin-top: 100px;
+    margin-right: 120px;
+    height: 450px;
+    max-width: 550px;
+    position: absolute;
+    bottom: 50;
+    right: 0;
+
+}
+
+.image2 {
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 550px;
+
+}
+
+.user-interface {
+    /* border:1px solid black; */
+    height: 480px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 300px;
+    width: 550px;
+    background-color: white;
+    padding-left: 30px;
+}
+
+.user-interface h2 {
+    font-size: 50px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.user-interface li {
+    padding: 9px;
+    letter-spacing: .02em;
+    font-size: larger;
+}
+
+.user-interface button {
+    border: none;
+    margin-top: 50px;
+}
+
+.page4 {
+    background-color: darkblue;
+    color: white;
+    height: 900px;
+}
+
+.page4 h1 {
+    text-align: center;
+    font-size: 75px;
+    margin-bottom: 30px;
+    padding-top: 60px;
+    font-weight: lighter;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.page4 a {
+    color: white;
+    font-size:medium;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.page4 a:hover {
+    border-bottom: 1px solid #1803bb;
+}
+
+.page4 p {
+    font-size:medium;
+    text-align: center;
+}
+
+.brand-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 100px;
+    padding-top: 100px
+}
+
+.brand-strategy {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    width: 300px;
+    height: 500px;
+    padding: 20px 20px;
+    color: black;
+    background-color: white;
+}
+
+.brand-identity {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    width: 300px;
+    height: 500px;
+    padding: 20px 20px;
+    color: black;
+    background-color: white;
+}
+
+.communication-strategy {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    width: 300px;
+    height: 500px;
+    padding: 20px 20px;
+    color: black;
+    background-color: white;
+}
+
+.brand-box img {
+    height: 150px;
+    width: 200px;
+    padding-left: 17%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.brand-box p {
+    text-align: left;
+    padding-left: 20px;
+    padding: 9px 0;
+    font-size: 23px;
+}
+
+.brand-box h3 {
+    font-weight: bold;
+    font-size: 23px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.page5{
+    height: auto;
+    background-color:white;
+    text-align: center;
+}
+
+.page5 a {
+    color: black;
+    font-size:medium;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.page5 h1{
+    text-align: center;
+    font-size: 75px;
+    margin-bottom: 30px;
+    padding-top: 60px;
+    font-weight: normal;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.page5 p{
+   margin-bottom: 20px;
+}
+
+.row::after{
+    content: "";
+    display: table;
+}
+
+.justo{
+    float: left;
+    width:33.33%;
+    padding: 15px 0;
+    text-align: justify;
+    height:100%;
+    color: grey;
+}
+
+.judto li{
+   list-style-position: outside;
+}
+
+.meet-the-team{
+    height:700px;
+    background-color: #1803bb;
+    color: white;
+    margin-top:350px;
+    text-align: center;
+}
+
+.meet-the-team h1{
+    padding:40px 0;
+}
+
+.meat-the-team-box{
+    display: flex;
+    justify-content: space-between;
+    margin:0 100px;
+    margin-top: 50px;
+}
+
+.bob-brown{
+    flex: 1;
+    border:1px solid white;
+    max-width:550px;
+    height: 330px;
+    background-color: white;
+    color: black;
+   
+}
+
+.bob-brown h6 ,.mary-smith h6{
+    color: rgb(199, 199, 199);
+    padding-bottom:20px;
+    text-align: justify;
+    margin-left: 250px;
+    margin-top: 50px;
+    font-size: medium;
+    font-weight: lighter;
+
+}
+
+.bob-brown h3 ,.mary-smith h3{
+    color: #ff4a6d;
+    padding-bottom:20px; 
+    text-align: justify;
+    margin-left: 250px;   
+}
+
+.bob-brown p ,.mary-smith p{
+    text-align: justify;
+    margin-left: 250px;
+    padding-top: 20px;
+}
+
+.bob-brown img{
+    height:200px;
+    width: 200px;
+    float: left;
+    padding-top: 30px;
+    border-radius:100% 100% 100% 100%;
+}
+
+.bob-brown a{
+    height: 25px;
+}
+
+.mary-smith{
+    flex: 1;
+    border:1px solid white;
+    max-width:550px;
+    height: 330px;
+    background-color: white;
+    color: black;
+}
+
+.mary-smith img{
+    height:200px;
+    width: 200px;
+    float: left;
+    padding-top: 30px;
+    border-radius:100% 100% 100% 100%;
+}
+
+.page7{
+    display: flex;
+}
+
+.online-planning{
+    flex: 1;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.online-planning h6{
+    margin:20px 0;
+}
+
+.online-planning h2{
+    font-size:40px;
+}
+
+.online-planning p{
+    letter-spacing: .02em;
+    text-align: justify;
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-bottom: 150px;
+}
+
+.online-planning button{
+    background-color: rgb(0, 10, 153);
+    border: none;
+    color: white;
+    height: 60px;
+    width: 190px;
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: bold;
+    float: left;
+    margin-left: 200px;
+}
+
+.online-planning button:hover {
+    background-color: #ff4a6d;
+}
+
+#online{
+    border-top: 5px solid #ff4a6d;
+}
+
+.work-laptop{
+    flex:1.5;
+   border: 1px transparent;
+   height: 750px;
+   max-width: 650px;
+   background-color: #e6e6e6;
+}
+
+.page7 img{
+    margin-top: 100px ;
+    margin-right: 100px;
+    max-height: 725px;
+    max-width:550px;
+}
+
+.page8{
+    background-color: #1803bb;
+    height: 1150px;
+}
+
+.corprate p{
+    text-align: center;
+    color: white;
+    padding-bottom:50px;
+}
+
+.corprate h1{
+    margin-bottom:10px;
+    font-size:70px;
+    font-weight: lighter;
+    color: white;
+    text-align: center;
+    padding-top:60px;
+    padding-bottom: 50px;
+}
+
+.brand-creative-marketting{
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-creative-marketting h2{
+    flex:3.3;
+    height: auto;
+    text-align:center;
+    padding-bottom: 20px;   
+}
+
+.strategy-brand{
+    flex:3.3;
+    height: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.champaign-creative{
+    flex:3.3;
+    height: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.marketting-champaign{
+    flex: 3.3;
+    height: auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.strategy-brand img{
+    float: left;
+    padding-left: 200px;
+    height:250px;
+    width: 250px;
+    padding-bottom: 20px;
+}
+
+.champaign-creative img{
+     height:250px;
+     width: 250px;
+     float: left;
+    padding-left: 200px;
+    padding-bottom: 20px; 
+}
+
+.marketting-champaign img{
+    height:250px;
+    width: 250px;
+    float: left;
+    padding-left: 200px; 
+    padding-bottom: 20px;
+}
+
+.brand-creative-marketting a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.brand-creative-marketting a:hover{
+    border-bottom: #1803bb;
+    opacity: .5;
+}
+
+.footer{
+    background-color:gray;
+    text-align: center;
+}
+
+.footer  p{
+   padding-bottom:50px;
+   padding-top:50px;
+   color: white;
+}
+
+.footer h6 {
+    padding-bottom: 30px;
+    color: white;
+    word-spacing:.2em;
+}
+
+.footer a{
+    text-decoration: none;
+    color: rgb(255, 197, 109);
+    border-bottom: 2px solid rgb(255, 153, 0) ;
+}
+
+.footer a:hover{
+    border-bottom: grey;
+}

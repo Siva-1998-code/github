@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function countCurrency(amount){
+            let notes = [2000,500,200,100,50,20,10,5,2,1];
+            let note_counter = Array(10).fill(0);
+
+            for(let i = 0 ; i < 10 ; i++){
+                if(amount >= notes[i]){
+                    note_counter[i] = Math.floor( amount / notes [i] );
+                    amount = amount % notes[i];
+                }
+            }
+            document.write("Indian Money value : " + "<br/>");
+            for(let i = 0 ; i < 10 ; i++){
+                if (note_counter[i] !=0){
+                    document.write(notes[i] +" * "
+                    +note_counter[i]+"<br/>");
+                }
+            }
+        }
+        let amount = 11168;
+        countCurrency(amount);
+        
+    </script>
+</body>
+</html>
