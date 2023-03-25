@@ -1,0 +1,76 @@
+*{
+    margin: auto auto;
+    padding: 0;
+}
+
+
+.container{
+    height: 100vh;
+    background: url(/src/Validation/nature.jpg) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h2{
+    text-align: center;
+    padding: 20px 0;
+    color: rgb(59, 89, 255);
+}
+
+.form{
+    border: 2px solid transparent;
+    border-radius: 10px ;
+    background-color: white;
+    width: fit-content;
+    padding: 20px 10px ;
+}
+
+.form a{
+    color: rgb(59, 89, 255);
+}
+
+.form-group label {
+    display: block;
+    font-size: large;
+    font-weight: 500;
+    color: rgb(59, 89, 255);
+}
+
+.form-group input{
+    padding: 10px 65.5px;
+    border-radius: 10px 0 ;
+    margin: 15px 0;
+    background-color: rgb(202, 202, 202);
+}
+
+.form-group i{
+    display: block;
+     color: rgb(255, 0, 0);
+}
+
+.form-group input::placeholder{
+    color: rgb(59, 89, 255);
+}
+
+.btn{
+    padding: 10px 50px;
+    border: 1px ;
+    background-color: rgb(22, 57, 255) ;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: large;
+    cursor: pointer;
+}
+
+.btn:hover{
+   background-color: rgb(59, 89, 255);
+   color: white;
+   padding: 10px 90px;
+   border-radius: 10px 0;
+}
+

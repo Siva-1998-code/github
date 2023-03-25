@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <link rel="stylesheet" href="/src/Validation/Form.css">
+    <script src="/src/Validation/Form.js"></script>
+</head>
+
+<body>
+    <section class="container">
+        <form action="#" class="form" id="form">
+            <h2>Sign Up </h2>
+            <div class="form-group">
+                <label for="name">User Name :</label>
+            <input type="text" placeholder="User Name" id="name" autocomplete="off">
+            <i id="alert1"></i>
+            </div>
+
+            <div class="form-group">
+                <label for="mail">MAIL ID :</label>
+                <input type="email" placeholder="Mail ID" id="mail" autocomplete="off">
+                <i id="alert3"></i>
+            </div>
+
+            <div class="form-group">
+                <label for="name">PASSWORD :</label>
+                <input type="text" placeholder="Password" id="pass" autocomplete="off" minlength="6" maxlength="12">
+                <i id="alert4"></i>
+            </div>
+
+            <div class="form-group">
+                <label for="name">CONFIRM PASSWORD :</label>
+                <input type="text" placeholder="Confirm Password" id="c-pass" autocomplete="off" minlength="6"
+                    maxlength="12">
+                <i id="alert5"></i>
+            </div>
+
+            <input type="checkbox" id="checkbox"> <label for="checkbox"><a href="#">Terms And Conditions</a></label>
+            <button class="btn" type="submit" onclick="validation()">SIGN UP</button>
+            <script>
+                document.querySelector("form").addEventListener("submit", event => {
+                    event.preventDefault()
+                    let formData = {
+                        name: event.target[0].value,
+                        // number: event.target[1].value,
+                        eMail: event.target[2].value,
+                        password: event.target[3].value,
+                        confirmPassword: event.target[4].value
+                    }
+                    console.log(formData);
+                    validation()
+                })
+            </script>
+        </form>
+    </section>
+</body>
+
+</html>

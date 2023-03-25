@@ -1,0 +1,57 @@
+*{
+    margin: auto auto;
+    padding: 0;
+}
+
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(https://i.makeagif.com/media/11-16-2019/HbFhpE.gif) no-repeat;
+    background-size: cover;
+}
+
+.from{
+    border: 2px solid transparent;
+    width: fit-content;
+    padding: 20px 10px ;
+}
+
+.from-group label {
+    display: block;
+    font-size: large;
+    font-weight: 500;
+    color: white;
+}
+
+.from-group input{
+    padding: 10px 50px;
+    border-radius: 10px 0 ;
+    margin: 15px 0;
+    background-color: rgb(202, 202, 202);
+    border:none;
+}
+
+.from-group input::placeholder{
+    color: white;
+}
+
+.from-group span{
+    display: block;
+    color: red;
+}
+
+.btn{
+    padding: 10px 50px;
+    border: 1px ;
+    background-color: rgb(4, 41, 249);
+    color: white;
+}
+
+.btn:hover{
+   background-color: rgb(0, 0, 200);
+   color: white;
+}
+
