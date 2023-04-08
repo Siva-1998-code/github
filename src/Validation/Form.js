@@ -61,7 +61,7 @@ function validation() {
         document.getElementById("pass").style.border = "3px solid red";
         document.getElementById("alert4").innerHTML= "Enter Password Please";
     }
-    else if(pass==/^(?=[0-9])(?=.[!@#$%^&*])[a-z0-9!@#$%^&*]{6,12}$/.test(pass)){
+    else if(!pass==/^([a-z0-9!@#$%^&*](?=.[!@#$%^&*]))$/.test(pass)){
         document.getElementById("pass").style.border = "3px solid red";
         document.getElementById("alert4").innerHTML = "Enter Correct Input Please";
     }

@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.shadow :hover {
+    box-shadow: -1px 36px 35px -12px rgba(0, 0, 0, 0.52);
+    -webkit-box-shadow: -1px 36px 35px -12px rgba(0, 0, 0, 0.52);
+    -moz-box-shadow: -1px 36px 35px -12px rgba(0, 0, 0, 0.52);
+}
+
+.bt-line:hover {
+    border-bottom: 2px solid rgb(65, 116, 255);
+}
+
+.btn {
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.btn:hover {
+    background-color: rgb(34, 80, 187);
+    border-color: rgb(34, 80, 187);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.btn-2 {
+    color: rgb(0, 0, 0);
+    border-color: rgb(190, 190, 190);
+}
+
+.btn-2:hover{
+    background-color: rgb(189, 189, 189);
+    border-color: rgb(189, 189, 189);
+    transform: scale(1.1);
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.bg{
+    background-color: rgb(34, 80, 187);
+    color: white;
+}
+
+
+.logo{
+    background-color: rgb(245, 37, 37);
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.logo:hover{
+    background-color: transparent;
+    border-color: rgb(189, 189, 189);
+    transform: scale(1.1);
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.bg2{
+    background-color: rgb(36, 34, 34);
+}
+
+.btn3{
+    border: none;
+    color: white;
+    background-color: transparent;
+}
+
+.btn3:hover{
+    background-color: rgb(148, 147, 147);
+}

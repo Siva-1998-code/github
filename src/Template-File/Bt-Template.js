@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from 'react-bootstrap';
-import './Bt-Template.css'
+import './Template-File/Bt-Template.css'
 
 class Section extends React.Component {
   render() {

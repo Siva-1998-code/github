@@ -43,9 +43,9 @@ function successInput(input) {
 function checkLength(input, min, max) {
   const data = input.value.trim().length;
   if (data < min) {
-    errorInput(input, `${getName(input)} must be aleast greater than ${min} characters`);
+    errorInput(input, `${getName(input)} must be atleast greater than ${min} characters`);
   } else if (data > max) {
-    errorInput(input, `${getName(input)} must be aleast lesser than ${max} characters`);
+    errorInput(input, `${getName(input)} must be atleast lesser than ${max} characters`);
   } else {
     successInput(input);
   }

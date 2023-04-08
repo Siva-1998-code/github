@@ -1,0 +1,10 @@
+.input input{
+  outline: none;
+}
+
+@media screen and (max-width:768px) {
+  .input input{
+    display: block;
+    margin-bottom: 20px;
+  }
+}
