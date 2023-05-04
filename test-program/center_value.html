@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .block {
+            display: block;
+        }
+        .block h2{
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            font-weight: 900;
+        }
+        .block button{
+            background-color: rgb(54, 54, 253);
+            border: none;
+            padding: 20px 10px;
+            border-radius: 10px;
+            color: white;
+            font-size:1.1rem ;
+        }
+        .block button:hover{
+            background-color: rgb(28, 28, 241);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="block">
+            <h2>Find a center value</h2>
+            <button onclick="test()">Click to find middle value</button>
+            <p id="alert1"></p>
+            <p id="alert2"></p>
+        </div>
+    </section>
+    <script>
+        function test() {
+            const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+            document.getElementById('alert1').innerHTML =`Array numbers : ${array}`;
+            var middle_value = parseInt((array.length / 2).toFixed(), 10);
+            if (middle_value === -1) {
+                alert("array is empty")
+            } else {
+                document.getElementById('alert2').innerHTML = `Array Middle Value is : ${middle_value}`;
+            }
+        }
+    </script>
+</body>
+
+</html>

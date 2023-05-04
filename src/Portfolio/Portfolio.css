@@ -8,6 +8,11 @@
     scroll-behavior: smooth;
 }
 
+.bg {
+    background: #e0e0e0;
+    text-align: center;
+}
+
 body {
     position: absolute;
 }
@@ -126,10 +131,6 @@ a:hover {
     }
 }
 
-.bg {
-    background: #e0e0e0;
-    text-align: center;
-}
 
 .head {
     display: flex;

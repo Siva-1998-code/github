@@ -21,7 +21,7 @@ function ContainerExample() {
                                     Upto 40% off an
                                 </Card.Text>
                                 <Card.Title>Women's Ethnic Clothing</Card.Title>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Button variant="primary" className='text-dark'>Go somewhere</Button>
                             </Card.Body>
                         </Card>
                     </a>

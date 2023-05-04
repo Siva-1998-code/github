@@ -12,7 +12,7 @@ function Cosmatics() {
             <h2 className="mb-5 mt-5">Popular gifts right now</h2>
             <a href='#'  style={{ textDecoration: 'none', color: 'black' }}>Shop all deals<BsArrowRight /></a>
             <Row>
-                <Col className='shadow'>
+                <Col >
                     <a href='#' style={{ textDecoration: 'none', color: 'black' }}>
                         <Card style={{ width: '18rem' }} className="mb-3">
                             <a href='#'>
@@ -28,7 +28,7 @@ function Cosmatics() {
                         </Card>
                     </a>
                 </Col>
-                <Col className='shadow'>
+                <Col >
                     <a href='#' style={{ textDecoration: 'none', color: 'black' }}>
                         <Card style={{ width: '18rem' }}>
                             <a href='#'>
@@ -44,7 +44,7 @@ function Cosmatics() {
                         </Card>
                     </a>
                 </Col>
-                <Col className='shadow'>
+                <Col >
                     <a href='#' style={{ textDecoration: 'none', color: 'black' }}>
                         <Card style={{ width: '18rem' }}>
                             <a href='#'>
@@ -60,7 +60,7 @@ function Cosmatics() {
                         </Card>
                     </a>
                 </Col>
-                <Col className='shadow'>
+                <Col >
                     <a href='#' style={{ textDecoration: 'none', color: 'black' }}>
                         <Card style={{ width: '18rem' }}>
                             <a href='#'>
@@ -76,7 +76,7 @@ function Cosmatics() {
                         </Card>
                     </a>
                 </Col>
-                <Col className='shadow'>
+                <Col >
                     <a href='#' style={{ textDecoration: 'none', color: 'black' }}>
                         <Card style={{ width: '18rem' }}>
                             <a href='#'>
@@ -92,7 +92,7 @@ function Cosmatics() {
                         </Card>
                     </a>
                 </Col>
-                <Col className='shadow'>
+                <Col >
                     <a href='#' style={{ textDecoration: 'none', color: 'black' }}>
                         <Card style={{ width: '18rem' }}>
                             <a href='#'>
@@ -108,7 +108,7 @@ function Cosmatics() {
                         </Card>
                     </a>
                 </Col>
-                <Col className='shadow'>
+                <Col >
                     <a href='#' style={{ textDecoration: 'none', color: 'black' }}>
                         <Card style={{ width: '18rem' }}>
                             <a href='#'>
@@ -124,7 +124,7 @@ function Cosmatics() {
                         </Card>
                     </a>
                 </Col>
-                <Col className='shadow '>
+                <Col >
                     <a href='#' style={{ textDecoration: 'none', color: 'black' }} >
                         <Card style={{ width: '18rem' }} className='mb-5'>
                             <a href='#'>

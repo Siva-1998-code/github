@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1 id="header">Unique Values from an array</h1> <br>
+             <h2 id="call1"></h2> <br>
+
+        <h1 id="header">Remove Duplicates</h1> <br>
+             <h2 id="call2"></h2> <br>
+    </div>
+    <script>
+        const students = ["Maheswari", "arun", "vicky", "madhavan",
+                         "bala", "Sivananthan", "bharathi", "pallavi"
+                         , "saravanan", "boopathi", "janani"];
+        document.getElementById("call1").innerHTML = "Name. : "+students[5];
+
+        let arr=new Set(["1", "2", "3", "4",
+                         "5", "2", "3", "4"
+                         ,"5", "2"]);
+        let text="";
+        arr.forEach(function(Values){
+                text += Values + "<>";
+        })
+        document.getElementById("call2").innerHTML = text;
+    </script>
+
+</body>
+
+</html>
