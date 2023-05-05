@@ -1,0 +1,1699 @@
+// react-18 -- its a library (js library)
+// UI develop panna use agura oru library
+// codepen,codesandbox -- online react coding platform
+// local host -3000
+/* coder frendly :
+ 1) componet based coding
+ 2) code reusability
+ 3) easy debugging
+ */
+/*user frendly:
+1) fast rendering // re-rendering fastah irukum with the help of virtuval DOM
+2) 
+ */
+/*features of reactjs:
+1) jsx - extension version of js (coders frendly & effecient )
+jsx - combination of html & js code , effeciency and memory saved , optimization done during the time of pre processing , error avoid agum
+
+//with the help of babel (pre processor) - HTML code converted into equivalent java script object 
+2) components -- reusability 
+3) one way data binding - element la iruka content immutableah(unchangable) irukanum , for security purpose
+4) virtuval DOM- fast re-rendering
+5)  simplicity - easy to develop and learn
+6) performance - effecient ah iruku
+
+*/
+// developed by jordan walke, facebook software engineer
+//  first used in facebook feeds page
+// to archive the reusable UI components
+// its open source
+// its a component based frontend library
+// once write panitu need iruka yedathula call panikalam
+// application contains 3 layers  --- model,view,controller 
+/*react is a library - it covers only view part of the application
+1)  view part - intract with user , screen la display agura things  
+2) in application -- database and user kuda intract pandra layerkum middle la oru logic structure irukum it controls the other two layers
+3) reactjs used for develop the view layer and make it effeciently , user kuda intract panumbothu component epdi react pananum these related features lam react mulama pana mudiyum
+4) reactjs -- declarative,effecient,and flexible 
+declarative -- problm solve panna actual coding use panama , adthukana logic mension pani problms solve panuvanga (calling librarys)
+used to building a reusable Ui(view layer) component 
+5) higher level component -- all components combined into higher level component , high level comp contains basic structure of a application , idkunu thaniya execution and output display lam illa 
+work of high level comp:
+1) combine all other components
+2) contains basic structure of the application , it tells how the components are arrange
+*/
+
+// angular is a framework - framework it means we can able to create a full fledged application
+// application develope panna thevayana basic codings and librarys yelame ,sub sequence components yellame frame work la irukum
+// basic codes defaultah irukum and application specific codes matum write panna pothum so easy to code
+
+/* my-app
+ 1) node-modules : basicah thevayana librarys yelam inga irukum , 3rd partys library use panalum adthu inga store agum  
+ 2) (1) public : (img,videos,audios )asserts yelame publicla copy panipotu inga irudhu use pananumm
+ 2) (2) index.html : application oda base idthudhan, idthula irudhudha application start agum
+   <div id="root"></div>  -  react oda root part idthudhan
+   index.html la irundhu app.js ku pogum
+   3) src  : contains js code and HTML code
+   3) (1) app.js - browsesr la view agura codes yellame inga irukum, inga pandra changesdha display agum , outputku theavayana  yella thingsum ingadha write panuvom , idthula ulla code dha visuvalisation ku pogum , create pandra yella componentsum app.js la import pananum
+    3) (2) package.json -- application relateah iruka meta data information
+    // npm and node ku inga irundhudha information pogum
+ */
+
+    /* html code to js code
+    // dom structures la dha element lam create agum in DOM
+    // each tag oru elementah marum which means branch in DOM
+    
+    //<div>hello world</div> - HTML code
+pre processor HTML codeah JS objectah mathidum
+    //React.createElement("div",null,"helloworld") -- js code idthu dha execute agum
+    */
+
+    /* jsx features
+     class App extends Component{ // idthu dha base component high level component
+render(){ // HTML codes or browser la view pandra datas idthukulla kudukanum
+  var mystyle={ // jsx support inline style only and ifelse allow panadhu so ternary operator use panalam
+    fontSize:90, // pxl mensionpana theva illa
+    color:'#FF0000',
+  }
+  var mystyle2={
+    fontSize:80,
+    fontFamily: 'courire',
+    color:'#0075B6',
+  }
+  var i=3;
+return(
+  <div>
+    {/*user defined attribute prefixah data use pananum 
+    // attribute oda value 2 way la kudukalam {as expression},"string literals"} */
+    //<h1 style={mystyle}>this is react</h1> {/* html attribute it must be in camel case*/}
+    //<p style={mystyle2}>welcome to react js</p>
+   // <h1 style={mystyle2}>{i==3?"true":"false"}</h1> {/*ifelse support panadhu so we using ternary operator*/}
+ // </div>
+//)
+//}
+//}
+
+
+
+// class App extends Component{
+  //--------------------------stateinitialising and set state-----------------------------------------------------------
+  // class contains state,reder method
+  //render -- display pana vendiya yella html tagum hold panirukum
+  //state -- class ku thevayana datasah hold panum
+  // render pana vendiya datas hold panirukum
+  // state is mutable -- it changes with the time, user intract panumbothu or user kudukura inputku yetha mari change agum,
+  // state desides -- class oda behaviour and class la ennalam irukanum and class yedha render pananum 
+
+  // oru component dynamicah user kudukura inputku yetha mari change aga and and intractiva iruka reason state 
+
+  // user kudukura input vachi state ulla data change agum , data changes nala component oda behaviour marum , so idthanala dha state becomes the heart of the class component nu soldrom
+
+  // initially state have some data 
+/* state la ulla datasah initialize panna 
+ getinitialstate() method use agum
+*/
+/*class component process panna thevayana or render panna thevayana info indha state la irukum */
+
+// getinitialstate()-- set initial value for state
+/* setState() -- initial valueva setstate use pani modify panna mudiyum,
+UI trigger panum and render method call pannum
+*/
+}
+// export default App;
+
+
+
+
+// //------------------------------------state changing and intractive----------------------
+// import { Component } from 'react'
+// import'./App.css';
+// class App extends Component{
+// constructor(){ // used to initialize the state
+// super();
+// this.state={
+// displayBio:false // hardcoreah fix pandrom true nu
+// };
+// // this ah pudhusa oru method kuda tyup pandrom
+// this.newdata=this.newdata.bind(this); // method kuda this bind pananum apodha method kulla this use panna mudiyum
+// }
+// newdata(){
+//   this.setState({displayBio:!this.state.displayBio})
+// }
+// render(){
+//   return(
+//   <div>
+//     {
+//   this.state.displayBio?
+//    (<div> <h2>state initialized welcome to react</h2><button onClick={this.newdata}>Show less</button></div>):(<div><button onClick={this.newdata}>Read more</button></div>)}
+   
+// </div>
+//  )
+// }
+// }
+// export default App;
+
+
+// //-----------------------------------------chilld comp and main comp-------------------
+
+// import { Component } from 'react'
+// import'./App.css';
+
+// class App extends Component{
+// constructor(){ // used to initialize the state
+// super();
+// this.state={
+//   data:[
+//     {name:"sam",id:1234},
+//     {name:"saran",id:12345},
+//     {name:"sanath",id:123456},
+//   ]
+// }
+// }
+// render(){
+//   return(
+//     <div>
+//       <h3>
+//       this shows ho to render multipple class component
+
+//       </h3>
+//       <App2/>
+//     </div>
+//   );
+// }
+// }
+
+// class App2 extends Component{
+//   render(){
+//       return(
+//           <h2>child class component</h2>
+//       )
+//   }
+//   }
+
+// export default App;
+
+
+//props -- is immutable
+// to make data sharing between components -- functional arqumentah pass agum
+// attribute values hold panum and props is a object
+// depending on the props render agura component oda behaviour change agum
+// so props change aga kudathu
+
+/*
+1) index.js la props oda value kuduthutu aprm app.js la call pandradhu
+
+import { Component } from 'react'
+import'./App.css';
+
+class App extends Component{
+render(){
+  return(
+    <div>
+      <h2>welcome to {this.props.name}</h2>
+    </div>
+  )
+}
+}
+
+export default App;
+
+2) default props directah app.js la kudukalam
+
+class App extends Component{
+render(){
+  return(
+    <div>
+      <h2>welcome to {this.props.coursename}</h2>
+    </div>
+  )
+}
+}
+App.defaultProps ={
+  coursename:"my home"
+}
+*/
+
+
+/* props validtion  -- for type checking
+we need to import -- 
+import propTypes from 'prop-types';
+
+// crct data props la kudutha matum dha ecxpected output varum
+//props types venum ,props validate panna 
+
+*/
+
+// class App extends Component{
+//   render(){
+//     return(
+//     <div>
+//       <table>
+//         <tr>
+//           <th>type</th>
+//           <th>value</th>
+//           <th>valid</th>
+//         </tr>
+//         <tr>
+//           <td>Array</td>
+//           <td>{this.props.propArray}</td>
+//           <td>{this.props.propArray?"true":"false"}</td>
+//         </tr>
+  
+//         <tr>
+//           <td>integer</td>
+//           <td>{this.props.propNumber}</td>
+//           <td>{this.props.propNumber?"true":"false"}</td>
+//         </tr>
+  
+//         <tr>
+//           <td>string</td>
+//           <td>{this.props.propString}</td>
+//           <td>{this.props.propString?"true":"false"}</td>
+//         </tr>
+//       </table>
+//     </div>
+//     );
+//   }
+//   }
+//   App.propTypes = {
+//     propArray:propTypes.array.isRequired,
+//     propNumber:propTypes.number,
+//     propString:propTypes.string,
+//   }
+//   App.defaultProps ={
+//     propArray:[1,2,3,4],
+//     propNumber:2,
+//     propString:"sam",
+//   }
+
+
+  // --------------------------event Handler-------------------------------
+  // oru eventah process pani output kudukaradhu -- eventhandling (handle - backend process)
+  // synthetic events -- browser ku nu iruka default eventhandling mechanism, suthiyum wrap airukum
+
+
+  //react and other lang differences 
+
+//   in other program:
+{/* <button onClick="showmsg()">
+click me
+</button>
+function showmsg(){
+  console.log("welcome here");
+}
+
+// in reactjs
+
+<button onClick={showMsg}>
+click me
+</button>
+function showMsg(){
+  console.log("welcome here");
+}
+
+// example
+// default behavioue change
+<button onclick="console.log(clicked);return false"> click me</button>
+function showmsg(){
+  console.log("welcome here");
+}
+
+// in react 
+
+<button onClick={showMsg}>
+click me
+</button>
+function showMsg(e){ // form of an exception , parameter pass pananum
+   e.preventDefault();
+  console.log("welcome here");
+} */}
+
+
+
+/* events and event triggering
+
+import { Component } from 'react'
+import'./App.css';
+import propTypes from 'prop-types';
+class App extends Component{
+  constructor(props){
+super(props);
+this.state = {
+  companyName:''
+};
+  }
+  changeText(event){
+this.setState({
+  companyName:event.target.value
+})
+  }
+render(){
+  return(
+    <div>
+      <h3>event Example</h3>
+      <label htmlForm="name">Enter company Name : </label>
+      <input type='text' id='companyName' onChange={this.changeText.bind(this)}/>
+   <h4>you entered:{this.state.companyName}</h4>
+    </div>
+  )
+}
+
+}
+export default App;
+
+*/
+
+
+
+/* conditional rendering
+// 5 different methods use pandranga
+/*
+1) if
+
+function login(){
+
+}
+function logout(){
+
+}
+function signup(){
+  const isLoggedin=true
+  (isLoggedin==true)&&alert('user have logged in')
+if(isLoggedin){
+return <logout/>
+}
+return <login/>
+
+}
+2) trenary
+
+isLoggedin ? "logout" : "login"
+
+3) logical AND
+// else part null
+(condition==>a<blur,a>blur,a=b)&&alert('alert message')
+4) switch
+// multiple components irudha 
+
+switch(){
+  case cond:
+    first component
+      case cond:
+    second component
+  case cond:
+    third component
+
+  }
+6) condition rendering with enum
+
+
+
+
+
+*/  //conditional rendering example 
+
+// condition poruthu element display aganumma illa, vera yedhachum display aganuma nu decide agum
+
+
+// function Message (props){
+//   if(props.isLoggedin)
+// return <h1>welcome back</h1>;
+// else
+// return <h1>please login first</h1>;
+// }
+// function Login(props){
+//   return(
+//     <button onClick={props.clickinfo}>Login</button>
+//   )
+// }
+// function Logout(props){
+//   return(
+//     <button onClick={props.clickinfo}>Logout</button>
+//   )
+// }
+// class App extends Component{
+// constructor(props){
+//   super(props);
+//   this.handleLogin = this.handleLogin.bind(this);
+//   this.handleLogout = this.handleLogout.bind(this);
+//   this.state = {
+//     isLoggedin:true
+//   };
+// }
+//   handleLogin (){
+//     this.setState({isLoggedin:true});
+//   }
+
+//   handleLogout (){
+//     this.setState({isLoggedin:false});
+//   }
+//   render(){
+// return(
+//   <div>
+//   <Message isLoggedin={this.state.isLoggedin}/>
+//   {
+//     (this.state.isLoggedin)?(<Logout clickinfo={this.handleLogout}/>):(<Login clickinfo={this.handleLogin}/>)
+//   }
+//   </div>
+// );
+//   }
+// }
+
+
+// export default App;
+
+
+
+/*
+//------------------react forms----------------------------------------
+// forms types 
+// 1) uncontrolled forms = controlled by DOM
+dom la iruka elements ku thanna thane manage panda capacity iruku
+
+name ==> txtbox ==> sam ->reff // txt box la iruka txt(sam) idtha get panna  reff use agum , once get panita automaticah update aidum
+// once reff use pani get panita automatic ah update aidum
+
+// 2) controlled forms = controlled by Component
+empty state to some iput apdindra oru stateku change agudhu with the help of event handler
+name: txtbox==> some txt ==> onChange (event handler call aitu intern oru function call agum) -- controntlled compones
+
+/* state la initially variables and values kuduthu vachirupom with the help of constructor
+function {setstate(help of this set state txt update agum)} -- dump component
+*/ 
+
+// basic actions in form
+//name : username // its called lable
+
+/* kudukura informations ellam fetch aitu oru yedathula poi storeagum, depends on this forms differ agum (control or uncontroll)
+
+
+// dump component - state property initialization and setstate perform pannum
+// controlled component -  form irukura component
+
+
+// example : uncontrolled form
+
+import React,{ Component } from 'react'
+import'./App.css';
+
+
+class App extends React.Component{
+constructor(props){
+    super(props);
+    this.updateSubmit = this.updateSubmit.bind(this);
+    this.input = React.createRef();
+}
+updateSubmit(event){
+    alert("Entered name and company name");
+    event.preventDefault();
+}
+render(){
+    return(
+        <form onSubmit={this.updateSubmit}>
+            <h1>uncontrolled form</h1>
+            <label>Name :
+            <input type='text' ref={this.input}/>
+            </label>
+
+            <label>companyName: 
+                <input type='text' ref={this.input}/>
+            </label>
+          <input type='submit' value="submit"/>
+</form>
+    )
+}
+}
+
+export default App;
+
+
+*/
+
+/* example: controlled form
+
+import React,{ Component } from 'react'
+import'./App.css';
+
+
+class App extends React.Component{
+constructor(props){
+    super(props);
+this.state ={name:''};
+this.handleChange = this.handleChange.bind(this);
+this.handleSubmit = this.j=this.handleSubmit.bind(this);
+}
+handleChange(event){
+this.setState({name:event.target.value});
+}
+handleSubmit(event){
+alert("you have enterd name successfully");
+event.preventDefault();
+}
+render(){
+    return(
+        <form onSubmit={this.handleSubmit}>
+        <h1>controlled form</h1>
+        <label>
+            Name:
+            <input type='text' value={this.state.value} onChange={this.handleChange}/>
+
+        </label>
+        <input type='submit' value='submit'/>
+        </form>
+    
+    );
+}
+}
+
+export default App;
+*/
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+/*-------------------------------------------Maanavan.com----------------
+// dependencys install pana adthoda information indha packag.json la save agum
+ my-app -- important file is package.json -- its a depeendancy manifest file
+react -- it contains react js related concepts
+react-Dom - it focus only DOM
+react-script - project run and build and compilation works lam pathukum , nodejs base pani (calling babel)
+
+// internal librarys called -- contributed librarys
+babel -- advanced js to backward compatability
+// project create panumbothu indtha librarys lam node_modules kulla poidum
+
+// first page load panna 
+ main focus is  - index.js its a entry point , it needs (React,ReactDom) must import
+
+ ReactDom.render(what component,where to render)
+
+// component -- 1)  UI la independentah iruka oru area ,reusable peases, each pease is isolation.
+2) conceptually, its jst like a js functions or class, 
+*/
+
+/*two ways to create react component
+1) class based
+// class yedhum rturn panadhu
+//render -- means view react.component la irundhu inheri agum
+class mydata extends React.Component{
+render(){
+  return(
+    <h1>this is react{this.props.name}</h1>
+  )
+}
+}
+2) function based
+function mydata(props){
+return(
+  <h1>this is react{props.name}</h1>
+)
+}
+*/
+
+/* static contents :
+ 1) simple component create panna function based polam - menu,sidebar
+ dynamic content:
+2) dynamic contets or fetching datas from servre these relaed situation ku class components use pananum
+
+
+// ---------------------parent child relation--------------------
+
+import React,{ Component } from 'react'
+import'./App.css';
+
+
+function App2() {
+    return(
+        <div> 
+            <h1>this is child</h1>
+             </div>
+    )
+}
+
+
+class App extends React.Component{
+    render(){
+        return(
+    <div className='doc1'>
+        <h1>parent Component</h1>
+    <App2></App2>
+    </div>
+        )
+
+    }
+}
+export default App;
+
+
+//----------------nestedd child----------------------------------------
+
+import React,{ Component } from 'react'
+import'./App.css';
+class App extends React.Component{
+    render(){
+        return(
+    <div className='doc1'>
+        <h1>parent Component</h1>
+       <App2></App2>
+    </div>
+        )
+
+    }
+}
+
+function App2() {
+    return(
+        <div> 
+            <h1>this is child</h1>
+            <App3></App3>
+             </div>
+    )
+}
+
+
+function App3() {
+    return(
+        <div> 
+            <h1>this is child 2</h1>
+             </div>
+    )
+}
+export default App;
+
+
+//-----------------------props--------------------------------------------
+props === function parameters
+*)  props are used to pass data from a parent component to child component in react
+*) its a read only property 
+
+//----------------------in normal function :
+ function fun(name,id){
+  console.log(name);
+  console.log(id);
+ }
+ fun("sam",123);
+
+//---------------------- in react
+//--------------------------------------using function component
+import React,{ Component } from 'react'
+import'./App.css';
+function App(props){
+    return(
+        <h1>the name is {props.name}</h1>
+    )
+}
+export default App;
+
+//index.js
+
+  <React.StrictMode>
+    <App name='sam'/>
+  </React.StrictMode>
+);
+
+
+//---------------------------------------- in class component
+class App extends React.Component{
+    render(){
+        return(
+            <h1>this is {this.props.name}</h1>
+        )
+    }
+}
+export default App;
+
+//index.js
+
+  <React.StrictMode>
+    <App name='sam'/>
+  </React.StrictMode>
+);
+
+ ---------------------props example----------------------------
+  
+ // -----------------------------------parent comp
+
+ import'./App.css';
+import React from 'react'
+import Skills from './Skills';
+function App(props) {
+  return (
+    <div>
+        <h1>name : {props.name}</h1>
+        <h1>Emp id : {props.id}</h1>
+        <Skills posting="web developer"></Skills>
+    </div>
+  )
+}
+
+
+//-------------------------------------child comp
+
+
+export default App
+
+
+import React from 'react'
+
+function Skills(props) {
+  return (
+    <div>
+        <h1>posting is {props.posting}</h1>
+    </div>
+  )
+}
+
+
+
+//-----------------------------nestedchild
+
+import React from 'react'
+
+const Nestedchild = (props)=> {
+  return (
+    <div>
+        <h1>location is : {props.Location}</h1>
+        </div>
+  )
+}
+
+export default Nestedchild;
+
+//------------------------------------------------index.js
+  <React.StrictMode>
+    <App name="sam" id={1234}/>
+  </React.StrictMode>
+);
+
+
+//--------------------------------state in react------------------------
+ *) its a building block of react
+ *) its a object
+ *) creating component dynamic and intractivel
+ *) data la modification and re-rendering lam panna mudiyum
+ *) class level la constructor kulla matumdha state create panna mudiyum, functional level la panna mudiyadhu, with the help of HOOKs concept we can access state in function level
+ *) state initiialize panna -- constructor use agum
+ *) constructor(props),super(props) -- react.component la irudhu inherit panna propertiesah classkulla konduvar use agum
+(its a basic oops concept -- parent oda constructor venumna super keyword use pananum)
+*) state modify panaa setstate use agum
+
+import React,{Component} from "react"
+class App extends React.Component{
+constructor(props){
+    super(props);
+    this.state={ // initial state
+id:1,
+name:"sam"
+    };
+}
+
+    render(){
+    return(
+<div>
+    <h1>{this.state.id}</h1> // state render panna(this.state.), comp to comp share panna mudiyadhu , state means component la iruka datava manage panna namma create pandradhudha indha functionality
+
+    <h1>{this.state.name}</h1>
+</div>
+    )
+}
+}
+export default App;
+
+
+/* example state and set state:
+
+import React from "react"
+export default class App extends React.Component{
+constructor(props){
+  super(props)
+  this.state = {
+    name:"sam"
+  }
+}
+data=()=>{
+  this.setState({
+
+    name:"saath"
+  })
+}
+render(){
+  return(
+    <div>
+      <h1>name is : {this.state.name}</h1>
+      <button onClick={this.data}>click</button>
+    </div>
+  )
+}
+}
+
+
+*/
+
+
+//----------------------diff b/w props and state------------------------
+/*
+props:
+*)component to component data transfer panna props use agum (unidirectional - parent to child only)
+*) read only cant change
+
+state:
+*) component kullaye irukum like private property
+*) datava modify panna mudiyum but vera componentku share panna mudiyadhu
+*) with the help of setstate, data va modify panna mudiyum
+
+
+//------------------------react bootstrap--------------------------
+// index.html la cdn link add pananum
+import React from 'react'
+import { Button } from 'react-bootstrap' // cdn use panna import panikanum
+function App() {
+  return (
+    <div className='App'>
+<Button variant='primary' className="mr-2">primary</Button>
+<Button variant='warning' className="mr-2">primary</Button>
+<Button variant='danger' className="mr-2">primary</Button>
+    </div>
+  )
+}
+
+export default App;
+
+
+//-----------------------------------react-Event----------------------
+*) html and react events slightly diff irukum syntaxla
+
+//diff b/w react and html events
+html event:
+<button onclick="activelink()">
+Active
+</button>
+
+react event:
+<button onClick={activelink}>// in function based
+<button onClick={this.activelink}>// in class based // (this) it contains all scope of the class
+Active
+</button>
+
+/////////////////////////////////////////////////////////////example 1:
+
+import React from 'react'
+
+function App() {
+
+ function handleClick (){
+    console.log("log in succesfully");
+  }
+  let handleClick2  = (e) => { // by defaultah parameter pass pananum
+    *) enna event perform airukunu by defaultah pass pannum
+    *) parameter kulla first arqumentah event iruku , enna event nadandhuchunu easyah capture panna mudiyum
+    console.log("logout succesfully");
+console.log(e);
+  }
+    return (
+    <div className='App'>
+        <button onClick={handleClick}>login</button>
+        <button onClick={handleClick2}>logout</button>
+    </div>
+  );
+
+}
+
+export default App;
+
+
+// example 2:
+-------------------------------------------in classs component
+
+import React from 'react'
+class App extends React.Component{
+constructor(props){
+    super()
+
+}
+    handleClick (){
+             console.log("log in succesfully");
+           }
+    handleClick2  = (e) => console.log("logout succesfully");
+    console.log(e );
+// parameterkulla first argument event
+
+render(){
+    return(
+        <div className='App'>
+             <button onClick={this.handleClick}>login</button>
+                <button onClick={this.handleClick2}>logout</button>
+             </div>
+    )
+}
+}
+export default App;
+
+
+////---------example :3--------------------
+
+//------------------------------this - bind-------------------
+
+import React from "react"
+export default class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state ={
+      count:0
+    };
+    this.handleClick = this.handleClick.bind(this);
+  }
+    handleClick(){
+      this.setState({
+        count:this.state.count+1
+      },function(){
+        console.log("jobs done");
+      });
+  }
+
+render() {
+  return(
+<div>
+<div>
+  button press: {this.state.count}
+</div>
+<button onClick={this.handleClick}>Add one</button>
+</div>
+  ); 
+}
+}
+
+
+*) constructor ku veliya oru functionkulla this use pananum na bind pananum
+*) constructor level la bind pandradhu good practice
+*) Arrow function use panna bind theva illa
+ex:
+handle = ()=>{
+}
+<button onClick={this.handle}></button>
+
+// example :
+import React from 'react'
+
+class App extends React.Component {
+constructor(){
+  super()
+console.log(this);
+}
+ Signin(){
+  console.log("clicked");
+console.log(this);
+
+}
+ Signout = (e)=>{
+  console.log("signout");
+  console.log(e);
+
+}
+render(){
+return (
+    <div>
+<button onClick={this.Signin.bind(this)}>Sign in</button>
+<button onClick={this.Signout}>Sign out</button>
+    </div>
+  )
+}
+}
+export default App;
+
+
+*) normalah method create panitu, button la arrow functionah use panna adthula () use pananum
+ex:
+handle(){
+
+} 
+<button onClick={()=> this.handle()}></button>
+
+
+//----------------------react Hooks-UseState ----------------------------
+*) react 16.8 - introduce pananga
+*) without writing class we can create react component
+*) in normaly,class illama code yeludhumpothu state manage pana mudiyadhu 
+1) class based components - statefull component -- state managr panna mudiyum
+2) function based components - stateless components -- state manage panna mudiyadhu
+
+ex: 1
+//--in treditional way--
+class App extends React.Component {
+state ={
+buttonPress: ""
+};
+onAddPress(){
+    this.setState({buttonPress:"add"});
+    console.log("add pressed");
+}
+onDeletePressed(){
+    this.setState({buttonPress:"delete"});
+    console.log("delete pressed");
+}
+render(){
+    return (
+        <div>
+            <button onClick={() => this.onAddPress()}>add</button>
+            <button onClick={() => this.onDeletePressed()}>delete</button>
+        </div>
+      );
+}
+}
+export default App;
+
+ex: 2 react Hooks -- --------------------------------------------usestate
+
+import React from 'react'
+import { useState } from 'react'
+function App() {
+  
+  const [data,setfun] = useState("");
+  
+  const onAddpressed =()=>{
+setfun("add");
+console.log({data});
+}
+const onDeletepressed =()=>{
+  setfun("delete");
+  console.log({data});
+}
+  return (
+    <div>
+<button onClick={onAddpressed}>Add</button>
+<button onClick={onDeletepressed}>delete</button>
+    </div>
+  )
+}
+
+export default App
+
+
+//ex:3
+
+import React,{useState} from 'react'
+
+const App= () =>{
+    const[button,setButton] = useState("");
+
+const onAddPress = () =>{
+    setButton("add");
+    console.log({button});
+};
+const onDeletePress = () =>{
+    setButton("delete");
+    console.log({button});
+};
+
+return(
+    <div>
+<button onClick={()=>onAddPress()}>add</button>
+<button onClick={()=>onDeletePress()}>delete</button>
+
+    </div>
+)
+}
+export default App
+
+//---------------------------React life-cycle----------------------------
+*) life-cycle nale class based componentla matum dha implement panna mudiyum,function la create panna useEffect use agum(HOOKs)
+
+//  1) mounting : at this phase component created, (your code,react internals) and inserted into DOM
+    2) updating : in this phase react component undergoes growth by being update via changes in props or state
+    3) unmounting : at this phase component is removed from DOM
+
+// buildin react life-cycle methdds
+stage 1: during the time of component execution 
+// component create agumbothu kedaikura earlier methods rendering part
+*) constructor   
+*) render
+*) componentDidMount () -- render anadhuku aprm iruka stage
+*) componentWillMount(depricated,browserla warning msg varum) -- render aguradhuku munadi iruka oru stage, it execte before render 
+*) server side communication code -- componentDidMount kulla kudukanum,component render agumbothe by defaultah componentDidMountum render aidum.
+*) but custom methods la kudutha, yeppo andtha method call pandromo appodha execute agum
+stage 2:
+// user intract panna,change agura property and stateah manage pandra method 
+*) render
+*) componentDIdUpdate
+
+stage 3:
+// removing from DOM
+*) componentWillUNmount
+
+
+//----------------------------------------------useEffect---------------
+// function based componentla react lifecycle archive panna use agum
+*) componentDidMount kulla kudukura server side datava, useeffect method kulla kudukalam with state
+
+//----------------------list and keys-----------------------------------
+*) datava array or objectah manage panuvom, datava properah viewku render panna use agum
+*) why list requird a key:
+keys are a way to help react know how to effeciently update a list
+// list la yedhachum changes pana total Arraym rerender agama, changes iruka data matum key use pani updata pana mudiyum
+
+--------------------example: 1-----------------------------------
+import React from 'react'
+
+function App() {
+const Arr=[
+    {id:1,name:"sam1"},
+    {id:2,name:"sam2"},
+    {id:3,name:"sam3"},
+    {id:4,name:"sam4"},
+    {id:5,name:"sam5"},
+    {id:6,name:"sam6"},
+    {id:7,name:"sam7"}
+];
+    return(
+<div>
+<header>
+<h1>List and Keys</h1>
+<ul>
+{
+//     Arr.map(data =>(
+// <li key={data.id}>{data.name}</li>
+// or
+Arr.map((data,index) =>( // unique id illana index use pandlam
+    <li key={index}>{data.name}</li>
+    ))
+}
+</ul>
+</header>
+
+</div>
+
+    )
+}
+export default App;
+
+--------------------------example:2-----------------------------
+
+import React from 'react'
+
+function App() {
+const Arr=[
+ {name:"sam",
+skills:[
+    {name:"Angular",type:"frontEnd"},
+    {name:"ExpressJs",type:"BackEnd"},
+]},
+{name:"saran",
+skills:[
+    {name:"ReactJs",type:"frontEnd"},
+    {name:"NodeJs",type:"BackEnd"},
+]},
+];
+    return(
+<div>
+    {Arr.map((data,index)=>(
+    <div key={index}>
+        <h2>{data.name} Skills</h2>
+        // {/*nested  array }*/
+//         <div>
+//             {data.skills.map((data2,index)=>(
+//                 <p key={index}>
+//                     {data2.type}-{data2.name}
+//                 </p>
+//             ))}
+//         </div>
+//         </div>
+//     ))
+    
+//     }
+// </div>
+//     )
+// }
+// export default App;
+
+
+
+//------------------------only objectmatum irudha ------------------
+/*import React from 'react'
+
+function App() {
+const obj={
+    name:"saran",
+    email:"rsaravananrs96@gmail.com",
+};
+
+    return(
+<div>
+ {Object.keys(obj).map(key =>(
+    <p>{obj[key]}</p>
+ ))}
+</div>
+    )
+}
+export default App;
+
+*/
+
+/*  ----------------------condotional rendering--------------------------
+// single-responsibility principle (SRP)
+
+
+*) component splitting is importent(component breaking is importent)
+*) Application dynamicah konduvara:
+(component,State,props,event,conditional rendering) these are importent
+
+
+// rendering component based on condition
+ 
+import React from 'react'
+import UserGreeting from './UserGreeting';
+import GuestGreeting from './GuestGreeting';
+function App(props) {
+const Loggedin = props.Loggedin; // in index.js (Loggedin={true})
+if(Loggedin){
+return <UserGreeting/>;
+}
+    return <GuestGreeting/>;
+}
+export default App;
+
+//--------------------------------------------------
+import React from 'react'
+
+function GuestGreeting(props) {
+  return (
+    <div>
+        <h1>please signin</h1>
+    </div>
+  )
+}
+
+export default GuestGreeting;
+//------------------------------------------------
+
+import React from 'react'
+
+function UserGreeting(props) {
+  return (
+    <div>
+        <h1>please SignUP</h1>
+    </div>
+  )
+}
+
+export default UserGreeting;
+
+
+//-------------------Forms-----------------------------------------------
+*) single source of truth - handover to state ,statela irundhu yenga venalum yeduthukalam
+*) Forms -- Getting input from user ---> server sideku kudukanum
+*) onChange --  ((track pannum)) -- its like a spy // 
+input ulla kuduthutu oru function assign panita , andtha function call aitu inputla changes nadandha andtha function ku theriyum
+*) formla ulla datava modify panna state venum
+
+
+// example
+
+import React from 'react'
+import { useState } from 'react';
+function App() {
+  const[data,setName]=useState("");
+  const[headingText,setHeading]=useState();
+  function fun(event){
+// console.log("data changed");
+// console.log(event.target.placeholder);
+// console.log(event.target.type);
+// console.log(event.target.value);
+setName(event.target.value); // eventah handover panudhu stateku
+
+  }
+  function submitClick(e){
+setHeading(data)
+e.preventDefault(); // browser defaullt behavior prevent panna use agum
+  }
+  return ( 
+    <div>
+      <h1>Hello,{data}</h1>
+      <h1>After submit {headingText}</h1>
+      <form>
+      <input onChange={fun} // event trigger panum,inputla kudukura data function pogum , its like a spy it tracks input 
+      type='text' placeholder='enter name'/>
+      <button onClick={submitClick}>cick here</button>
+      </form>
+    </div>
+  )
+}
+
+export default App
+
+
+//-----------------React-Router-----------------------------------------
+
+*)its a third party library
+*) used for navigation
+1) import {BrowserRouter} from "react-router-dom";
+2) <BrowserRouter><App/></BrowserRouter>
+3) import {Link} from "react-router-dom";
+<link to='/about'>about</link>
+4)<Routes>
+<Route path="/" element={<Home/>}>
+</Routes>
+5) path and to la kudukuradhu sameah irukanum
+6) nested component route agumbothu -- otlet use pananum
+
+
+//--------------------------------redux------------------------------------
+*)  its a tool or library 
+*) it makes developement easy(easyah architect pannamudiyuum),less complexcity
+*) state management is the main terminology (its a state management Tool)
+*) state managepanumbothu iruka complexityah redux overcome panum
+
+use of redux:
+//--------------------------------in regular progrm:
+
+*)  component to component share panna,props and redux lam use pani share pandrom its complex process(itsnot a good practice)
+
+//-----------------------------------inredux:
+
+*) component to component directah data share(distibutr) panna mudiyum
+*) bulk data handled in server side communication, easy to manage and distibute 
+
+MVC:
+*) mvc-model view control -- desin pattern followed in IT
+*) Architecture design pattern for developing UI
+*) client and server side yellame idthula adangum
+
+flex: its like a idea 
+*) its a application design pattern - developed by facebook
+*) Application Architecture to build client side web App
+*) architecture stableah irukum
+*) introduce new terminologys : (
+  1) Action
+  2) Dispatch
+  3) Store
+  4) view 
+)
+*) flex design patternah from the scratch la irundhu design panama redux use panitu quickah archive panna mudiyum
+
+redux: 
+*) it takes flex idea and build a library (opensource library)
+flex oda design pattern follow pani creatre panna oru library
+*) oper source js library for creating UI
+*) it generally works with React and angular
+  
+principle of redux: (store,action,reducer)
+1) single source of truth: 
+application statesah oru yedathula vachi manage pandradhu.
+*) redux -- state container, state manage pandra oru library.
+*) redux takeover all the states in application, redux follows the state,its called single source of truth
+
+2) the state is read only:
+*)  redux statesah read and emit matum pannum (state lla changes panadhu)
+
+3) changes are made with pure function:
+*) changes are basic js functionality
+
+poor practice: without redux
+*) nested component try to communicate the parent component dirctly
+
+what redux offers:
+1) store:
+each component have state, all statsum oru place la call panna mudiyum its called store
+*) storing all application states in one place
+
+2) Dispatch: state changes pathukum
+*) state change ana adthu dispatch
+
+3) subscribe:
+*) componentku ,state changes nadandhu irukunu sollum
+
+Terminology:
+1) Actions : create,read,update,delete (CRUD operation)
+*) Js object(keys&values) describes state changes in application,
+*) react to storeku some payload info kudukarom
+ 
+Action Creator: 
+take some arguments and return action
+*) Arguments vachitu action create pandum
+
+2) Reducers (modify the state ): perform the action (current state,action)
+*) it takes currentstate,action as a input and return new state
+3) Store : manage the State
+*) heart of the redux
+*) it stores and guars application states
+*) subscribe pandra componentku store la ulla stateah supply pannum
+4) Dispatch : State changes
+5) Connect : connect to react
+ 
+redux strict rules:
+!) all state managed clearly
+2) every actions described properly
+
+
+
+
+---------------------------------React- Hooks concepts--------------
+*) only used in functional component
+*) component oda higher orderla matumdha use panna mudiyum,
+*) hooks ah if,conditional statement,loop kulla use panna mudiyadhu, 
+*) component oda immediate orderla matumdha use panna mudiyum 
+
+1) -------------------------------------------------------useState:
+example:1
+
+import React,{useState} from 'react' 
+function App() {
+    const[count,setCount] = useState(()=>5); // only one time execte agum,as a functionah kudutha
+    const DecrementCount = () =>{
+      // setCount(count-1);
+      setCount(ps=>ps-1);
+    }
+    const IncrementCount =() =>{
+      setCount(ps=>ps+1);
+    }
+  return (
+    <div>
+      <button onClick={DecrementCount}>-</button>
+      <span>{count}</span>
+      <button onClick={IncrementCount}>+</button>
+    </div>
+  )
+}
+
+export default App;
+
+
+example:2
+
+// import React from 'react'
+// // import App2 from './App2'
+// // import App3 from './App3'
+// import { Link,Outlet } from 'react-router-dom'
+// // import { Routes,Route } from 'react-router-dom'
+// function App() {
+//   return (
+//     <div>
+    
+//     <h1> this is home page</h1>
+//     <nav>
+// <Link to="App2">App2</Link>
+// <Link to="App3">App3</Link>
+//     </nav>
+//     <Outlet/>
+//     </div>
+//   )
+// }
+
+// export default App;
+
+import React,{useState} from 'react' 
+function App() {
+    const[count, fun] = useState(10); 
+    const[theme, settheme] = useState(""); 
+
+    const DecrementCount = () =>{
+      fun(ps=> {
+        return ps-1
+      });
+      settheme('blue');
+    }
+    const IncrementCount =() =>{
+      fun(ps=>ps+1);
+    settheme('yellow');
+
+    }
+
+  return (
+    <div>
+      <button onClick={DecrementCount}>-</button>
+      <span>{count}</span>
+      <span>{theme}</span>
+      <button onClick={IncrementCount}>+</button>
+    </div>
+  )
+}
+
+export default App;
+
+
+
+2) ----------------------------------------------useEffect : API calling
+
+example :1
+
+import React, { useState,useEffect } from 'react'
+function App() {
+  const[currentState,setState]= useState('posts');
+  const[item,setItem] = useState([]);
+useEffect(()=>{
+  fetch(`https://jsonplaceholder.typicode.com/${currentState}`)
+  .then(response => response.json())
+  .then(json => setItem(json))
+  return =>{
+    console.log("return function");
+  }
+},[currentState]);
+  return (
+    <>
+    <div>
+<button onClick={()=>{setState("posts")}}>posts</button>
+<button onClick={()=>{setState("users")}}>users</button>
+<button onClick={()=>{setState("comments")}}>comments</button>
+    </div>
+    <h1>{currentState}</h1>
+    {item.map(ele=> <pre>{JSON.stringify(ele)}</pre>)};
+    </>
+  )
+}
+
+export default App;
+
+
+example: 2
+
+import React, { useState,useEffect } from 'react'
+function App() {
+  const[width,setWidth]= useState(window.innerWidth);
+  const handleResize = ()=>setWidth(window.innerWidth);
+  useEffect(()=>{
+window.addEventListener('resize',handleResize);
+  },[]);
+return(
+<div>
+  {width}
+</div>
+)
+}
+
+export default App;
+
+3) --------------------------------------useMemo: (use memory session)
+
+*) slow function use panumbothu adthu componentah slow panama iruka memo use agum (slow functionah wrap panna matum use pananum)
+*) object referencing inequalityah vandha memo use pananum, memo use panna current and previous referance sameah irukum
+*) 
+example: 
+
+import { useState, useMemo} from "react";
+function App() {
+  const [number, setNumber] = useState(0);
+  const [dark, setDark] = useState(false);
+  const doubleNumber = useMemo(() => slowFunction(number), [number]);
+  const themeStyle = useMemo(() => {
+    return {
+      backgroundColor: dark ? "black" : "white",
+      color: dark ? "white" : "black",
+    };
+  }, [dark]);
+
+  
+  return (
+    <>
+      <input
+        type="number"
+        value={number}
+        onChange={e => setNumber(parseInt(e.target.value))}/>
+      <button onClick={() => {setDark(preDark => !preDark)}}>
+        Change Theme
+      </button>
+      <div style={themeStyle}>{doubleNumber}</div>
+    </>
+  );
+}
+const slowFunction = (num) => {
+  for (let i = 0; i <= 100000; i++) {}
+  return num * 2;
+};
+
+export default App;
+
+4) -----------------------------------------------------use callback:
+*) it similar to useMemo
+*) useMeme - functionkulla iruka returnah return pannum
+*) usecallback - it return the function
+*) mainly used object referance inequalityah irudha use panuvom
+
+example:
+
+import { useState,useEffect,useCallback } from "react";
+function App() {
+const [number,setNumber] = useState(1);
+  const [dark,setDark] = useState(false);
+
+  const getItems = useCallback(() =>{
+    return [number,number+2,number+2]
+  },[number]);
+  const theme = {
+    backgroundColor : dark?"black":"white",
+    color : !dark?"black":"white",
+  }
+  return (
+    <div style ={theme}>
+<input
+type="number" 
+value ={number} 
+onChange={e=>setNumber(parseInt(e.target.value))}/>
+<button onClick={()=>setDark(predark => !predark)}>change theme</button>
+<List getItems={getItems}></List>
+    </div>
+  )
+};
+
+export default App;
+
+function List ({getItems}){
+const[Items,setItems] = useState([]);
+useEffect (()=>{
+  setItems(getItems());
+
+},[getItems])
+
+return Items.map(item=><div key={item}>{item}</div>)
+}
+
+5) ---------------------------useRef: state changeanan re-render agadhu
+
+
+*) it returns object 
+useRef(0)// {current:0}
+*) HTML ah directah pointout pani referanceah use pana use agum
+*) tracking previous state and number of times render anadha save panna use agum
+
+
+6) -------------------useLayoutEffect  : synchronous way la methods call panum
+*) similar to useEffect
+*) useEffect - Asynchrous way,performance increase agum
+state changes agumbothu, react, DOM la engalam chages pananum nu calculate panitu,browserku snd panum (during this calculation or browserla process panumbotho, yeppo time iruko appo methodsah Asynchronous way la execute panum) 
+*)  useLayoutEffect - Synchronous, poor performance (useEffect work agalena matum useLayoutEffect use panalam)
+calculate panitu, browser ku snd pandra gapla synchronousah call agum
+
+
+7) ----------usecontext: it gives solution for property drilling
+unusd
+*) parent ---->child --->grand child
+*) parent to grand child directah datasah share panna mudiyum 
+
+8) use reducer : 
+*) complex state manage panna use agum 
+
+   
+*) usecontext and usereducer can replace redux
+
+
+
+*/
